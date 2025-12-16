@@ -51,3 +51,40 @@ for(let i = 0; i < elementClassCommune.length; i++) {
     console.log(elementClassCommune[i]);
     console.log(elementClassCommune[i].innerText);
 }
+
+/**
+ * J'insère des balises dans le fichier HTML grâce au code JavaScript
+ */
+// je crée un élement (balise) nommé <section>
+let elementSection = document.createElement("section");
+
+// Je récupère la balise <body> , puis je stocke <body> dans la variable elementBody.
+let elementBody = document.querySelector('body');
+
+
+elementBody.appendChild(elementSection);
+
+let nouveauTitre = document.createElement("h3");
+
+nouveauTitre.textContent = "Mon titre de la section";
+
+elementSection.appendChild(nouveauTitre);
+
+
+let elementMaman = document.createElement('maman');
+
+elementBody.appendChild(elementMaman);
+
+/**
+ * J'insère une image dans mon fichier DOM HTML
+ */
+let elementImage = document.createElement('img');
+elementImage.src ='oiseaupecheur.jpeg';
+elementImage.setAttribute("alt","Mon oiseau pêcheur");
+elementImage.className ="image-oiseau";
+elementImage.classList.add("image", "image3");
+
+// supprimer une classe de l'élément img
+elementImage.classList.remove("image3");
+
+elementBody.appendChild(elementImage);
