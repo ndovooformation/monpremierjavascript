@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de calcul d'âge</title>
+    <link rel="stylesheet" href="calcul_age.css">
+
+    <script src="dom_calcul_age.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Calcul l'âge</h2>
+    </header>
+
+    <section>
+        <article>
+            <!-- Je liste les communes de Mayotte -->
+            <h3 id="communes">Communes de Mayotte</h3>
+            <ol id="listCommunes">
+                <li class="commune">Koungou</li>
+                <li class="commune">Dzaoudzi</li>
+                <li class="commune">Bouéni</li>
+                <li class="commune">Chiconi</li>
+                <li class="commune">Tsingoni</li>
+                <li class="commune">Mamoudzou</li>
+                <li class="commune">Pamandzi</li>
+                <li class="commune">Ouangani</li>
+                <li class="commune">Sada</li>
+                <li class="commune">Bandraboua</li>
+                <li class="commune">Mtsamboro</li>
+                <li class="commune">Acoua</li>
+                <li class="commune">Dembéni</li>
+                <li class="commune">Kani-Keli</li>
+                <li class="commune">Chirongui</li>
+                <li class="commune">Mtsangamouji</li>
+                <li class="commune">Bandrele</li>
+            </ol>
+
+            <form>
+                <div>
+                    <h4>Présentez-vous </h4>
+                </div>
+                <div id="recensement">
+                    <p id="paragraphe1">Nous récensons la population de Mayotte.</p>
+                </div>
+                <div>
+                    <label for="nom">Nom : </label>
+                    <input type="text" name="nom" id="nom">
+                    <label for="prenom"></label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+                <div>
+                    <label for="situation">Etudiant(e)</label>
+                    <input type="radio" name="situation" id="etudiant">
+                    <label for="salarie">Salarié(e)</label>
+                    <input type="radio" name="situation" id="salarie">
+                </div>
+
+                <div>
+                    <label for="anne_naissance">Année de naissance</label>
+                    <input type="number" name="annee_naissance" id="annee_naissance">
+
+                    <p>Vous êtes agés de <span id="age_calcule"></span> <p>
+
+                </div>
+                <div>
+                    <input type="button" value="Valider" id="boutonValider">
+                </div>
+            </form>
+        </article>
+    </section>
+    
+</body>
+</html>
