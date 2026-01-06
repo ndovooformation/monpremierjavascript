@@ -6,7 +6,9 @@
     <title>Jeu de calcul d'âge</title>
     <link rel="stylesheet" href="calcul_age.css">
 
-    <script src="dom_calcul_age.js" defer></script>
+    <script src="evenement.js" defer></script>
+    <!-- <script src="dom_calcul_age.js" defer></script> -->
+    
 </head>
 <body>
     <header>
@@ -15,6 +17,21 @@
 
     <section>
         <article>
+            <!-- J'affiche la date du jour et l'heure -->
+             <div id="date" class="date">
+                <button id="validerDate">Date du jour</button>
+                <span id="dateDuJour"></span>
+                <br><br>
+
+                <p>
+                    Date au format local : <span id="dateDuJourFormat2"></span>
+                </p>
+             </div>
+
+             <div id="fonctionFleche">
+                <button id="boutonFleche">Fonction Flêchée</button>
+
+             </div>
             <!-- Je liste les communes de Mayotte -->
             <h3 id="communes">Communes de Mayotte</h3>
             <ol id="listCommunes">
@@ -61,11 +78,15 @@
                     <label for="anne_naissance">Année de naissance</label>
                     <input type="number" name="annee_naissance" id="annee_naissance">
 
-                    <p>Vous êtes agés de <span id="age_calcule"></span> <p>
+                    <p id="messageUtilisateur">
+                        <span id="nomUtilisateur"></span>
+                        <span id="age_calcule"></span>
+                        <span id="majorite"></span> 
+                    </p>
 
                 </div>
                 <div>
-                    <input type="button" value="Valider" id="boutonValider">
+                    <button value="Valider" id="boutonValider">Valider</button>
                 </div>
             </form>
         </article>
@@ -74,7 +95,7 @@
     <!-- J'insère ici une section en utilisation la DOM côté JavaScript -->
 
     <!-- Ma deuxième tentative de création de section -->
-     
+
     
 </body>
 </html>
